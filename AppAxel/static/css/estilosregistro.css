@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.contenedor {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #3a090999;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #ddff00;
+  box-shadow: 0 0 5px rgba(0, 133, 255, 0.5);
+}
+
+input[type="submit"] {
+  background-color: #0085ff;
+  color: #c01919;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  display: flex;
+ 
+}
+
+input[type="submit"]:hover {
+  background-color: #8e0e0e;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para los mensajes de éxito */
+.success-message {
+  background-color: #c9f7c5;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------FOOTER--------------------------------------------- */
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position:static;
+	bottom: 0;
+	width: 100%;
+	font-size: 11px;
+	
+  }
+  
+  footer {
+	
+	bottom: 0;
+	width: 100%;
+
+  }
+
+
+
+  /* ---------------------------------------------MEDIA QUERIES------------------------------------------------ */
+
+  /* Estilos para dispositivos con ancho de pantalla menor a 576px */
+@media screen and (max-width: 575px) {
+  .form {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .form h2 {
+    font-size: 24px;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
+
+/* Estilos para dispositivos con ancho de pantalla entre 576px y 768px */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .form {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .form h2 {
+    font-size: 36px;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
+
+/* Estilos para dispositivos con ancho de pantalla entre 768px y 992px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form {
+    width: 70%;
+    padding: 60px;
+  }
+
+  .form h2 {
+    font-size: 48px;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
+
+/* Estilos para dispositivos con ancho de pantalla mayor a 992px */
+@media screen and (min-width: 992px) {
+  .form {
+    width: 50%;
+    padding: 80px;
+  }
+
+  .form h2 {
+    font-size: 64px;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}

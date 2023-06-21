@@ -1,0 +1,349 @@
+/* CSS DE PERSONALIZACIÓN */
+
+/* PAGINA PRINCIPAL INICIO */
+
+body {
+	background-color: #ffffff;
+	color: #fff;
+	min-height: 100vh;
+	display: flex;
+  	flex-direction: column;
+}
+
+/* ------------------------------------------ESTILOS CARDS DE ROPA ----------------------------------------- */
+
+.card {
+	background-color: #ffffff00;
+	color: #ffffff00;
+	height: 100%;
+}
+
+.card-title {
+	color: #fff;
+}
+
+.card-text {
+	color: #ffffff;
+}
+
+.btn-primary {
+	background-color: #00000073;
+	border-color: #ffffff;
+}
+
+.btn-primary:hover {
+	background-color: #861111;
+	border-color: #4d1212;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #868686;
+	border-color: #858585;
+}
+
+
+
+/* ----------------------------------------------- ESTILOS NAVBAR ------------------------------------------- */
+.navbar {
+	background-color: #000000;
+
+}
+
+.navbar-logo {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 195px;
+
+}
+
+.navbar-logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.navbar-carrito {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+
+}
+
+.navbar-carrito img {
+	display: block;
+	width: 45%;
+	height: auto;
+}
+
+
+
+.textolanzamiento {
+	font-family: 'Heebo', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-primary {
+	display: flex;
+	justify-content: center;
+}
+
+.contenedorfoto2 img {
+	max-width: 100px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	margin-top: -30px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position:static;
+	bottom: 0;
+	width: 100%;
+	font-size: 11px;
+	
+  }
+  
+  footer {
+	
+	bottom: 0;
+	width: 100%;
+
+  }
+
+
+  .navbar-registro, .navbar-login{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.navbar-registro:hover , .navbar-login:hover{
+    color: rgb(139, 2, 2);
+    text-decoration: none;
+}
+
+.navbar-login{
+	margin-left: 2%;
+}
+
+
+  /* ----------------------------------------------TEXTO DEBAJO DEL NAVBAR -------------------------------- */
+  .text-bar {
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #353434;
+  }
+  
+  #text-change {
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	transition: all 0.5s ease;
+  }
+  
+
+
+
+
+
+
+
+/* -----------------------------------ESTILOS FORMULARIO CONTACTO-------------------------------------------- */
+.form-group label {
+	font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+	border-radius: 4px;
+	border: none;
+	background-color: #0000008f;
+	padding: 20px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.form-group .invalid-feedback {
+	display: none;
+	color: #ffea00;
+	font-size: 14px;
+}
+
+.form-group .is-invalid {
+	border-color: #ffea00;
+	box-shadow: none;
+	outline-color: #861111;
+}
+
+.form-container {
+	max-width: 600px;
+	/* Define el ancho máximo del contenedor */
+	margin: 0 auto;
+	/* Centra el contenedor en la página */
+}
+
+
+.contenedorfoto img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------ESTILOS CARRUSEL DE IMG------------------------------------- */
+.carousel {
+	margin-top: 5px;
+	border-radius: 8px;
+	/* Agregar bordes curvos */
+	overflow: hidden;
+	/* Para que las imágenes no se salgan del carrusel */
+}
+
+.carousel-inner {
+	max-height: 300px;
+	border-radius: 8px;
+	/* Agregar bordes curvos */
+}
+
+.carousel-item {
+	height: 300px;
+}
+
+.carousel-item img {
+	height: 300px;
+	object-fit: cover;
+	border-radius: 8px;
+	/* Agregar bordes curvos a las imágenes */
+}
+
+
+
+
+
+
+
+/* -------------------------------------------MEDIA QUERIES-------------------------------------------------- */
+
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media only screen and (max-width: 480px) {
+	.form-container {
+		max-width: 100%;
+		/* Cambia el ancho máximo del contenedor a 100% */
+		padding: 10px;
+		/* Agrega un relleno al contenedor */
+	}
+
+	input {
+		font-size: 16px;
+		/* Cambia el tamaño de fuente del campo de entrada */
+	}
+
+	button[type="submit"] {
+		font-size: 16px;
+		/* Cambia el tamaño de fuente del botón */
+	}
+
+	
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+	.form-container {
+		max-width: 80%;
+		/* Cambia el ancho máximo del contenedor a 80% */
+		padding: 20px;
+		/* Agrega un relleno mayor al contenedor */
+	}
+
+	input {
+		font-size: 18px;
+		/* Cambia el tamaño de fuente del campo de entrada */
+	}
+
+	button[type="submit"] {
+		font-size: 18px;
+		/* Cambia el tamaño de fuente del botón */
+	}
+}
+
+/* Estilos para pantallas grandes (PCs de escritorio) */
+@media only screen and (min-width: 1025px) {
+	.form-container {
+		max-width: 600px;
+		/* Define un ancho máximo fijo para el contenedor */
+		margin: 0 auto;
+		/* Centra el contenedor en la página */
+		padding: 30px;
+		/* Agrega un relleno mayor al contenedor */
+	}
+
+	input {
+		font-size: 20px;
+		/* Cambia el tamaño de fuente del campo de entrada */
+	}
+
+	button[type="submit"] {
+		font-size: 20px;
+		/* Cambia el tamaño de fuente del botón */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

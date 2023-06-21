@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ----------------------ESTILOS POR DEFECTO PARA EL CONTENEDOR PRINCIPAL-------------------------------- */
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  }
+  
+  .searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .inputcito[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .boton{
+    padding: 10px;
+    background-color: #880f0f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px; /* ajusta el margen superior según tu preferencia */
+  }
+  
+  .searchBox {
+    margin-bottom: 20px; /* ajusta el margen inferior según tu preferencia */
+  }
+  
+
+
+
+
+  /* ------------------------------------------MEDIA QUERIES---------------------------------------------- */
+
+  /* Media queries para pantallas de tamaño pequeño, como smartphones */
+  @media only screen and (max-width: 600px) {
+    .inputcito[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 0px;
+    }
+    
+    .boton {
+      margin-left: 2%;
+      width: 45%;
+    }
+  }
+  
+  /* Media queries para pantallas de tamaño mediano, como tablets */
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .searchBox {
+      flex-wrap: wrap;
+    }
+    
+    .inputcito[type="text"] {
+      width: calc(50% - 5px);
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    
+    .boton {
+      width: calc(50% - 5px);
+    }
+  }
+  
+  /* Media queries para pantallas de tamaño grande, como PC de escritorio */
+  @media only screen and (min-width: 992px) {
+    .inputcito[type="text"] {
+      width: 300px;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    
+    .boton {
+      width: auto;
+    }
+  }
+
+  /* Estilos normales para la imagen de perfil */
+.profile-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    /* Cambia el ancho de la imagen de perfil */
+    .profile-image img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    /* Cambia el tamaño de fuente del nombre de usuario */
+    .name {
+      font-size: 24px;
+    }
+    
+    /* Cambia el ancho del contenedor de estadísticas */
+    .stats {
+      width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position:static;
+        bottom: 0;
+        width: 100%;
+        font-size: 11px;
+        
+      }
+      
+      footer {
+        
+        bottom: 0;
+        width: 100%;
+    
+      }
+    
+  }
+  
+
